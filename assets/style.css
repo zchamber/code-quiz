@@ -1,0 +1,58 @@
+/* Center the HTML content vertically and horizontally */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc; /* Change background to gray */
+}
+
+/* Style the quiz container */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the Start Quiz button */
+#startButton {
+    background-color: blue; /* Change button background to blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Style the questions and choices */
+#quiz, #result {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Style the multiple choice buttons */
+button {
+    display: block; /* Make buttons appear in a vertical arrangement */
+    margin: 10px 0;
+    background-color: blue; /* Change button background to blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Style the timer display */
+.timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+}
