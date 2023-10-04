@@ -6,6 +6,7 @@ var choicesContainer = document.getElementById("choices");
 var scoreDisplay = document.getElementById("score");
 var initialsInput = document.getElementById("initials");
 var saveButton = document.getElementById("saveButton");
+var timerDisplay = document.getElementById("timerDisplay");
 
 var currentQuestionIndex = 0;
 var timeLeft = 60;
@@ -205,6 +206,10 @@ var questions = [
     }
 ];
 
+function updateTimerDisplay() {
+    timerDisplay.textContent = timeLeft;
+}
+
 function startQuiz() {
     startButton.style.display = "none";
     quiz.style.display = "block";
@@ -250,6 +255,7 @@ function startTimer() {
         if (timeLeft <= 0) {
             endQuiz();
         }
+        updateTimerDisplay();
     }, 1000);
 }
 
